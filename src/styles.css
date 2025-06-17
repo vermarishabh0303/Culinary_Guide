@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for logo carousel */
+.logo-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.logo-carousel {
+  display: flex;
+  width: fit-content;
+  animation: carousel 30s linear infinite;
+}
+
+.logo-carousel-reverse {
+  display: flex;
+  width: fit-content;
+  animation: carousel-reverse 30s linear infinite;
+}
+
+.logo-slide {
+  flex-shrink: 0;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes carousel-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Custom animation keyframes */
+@keyframes framerFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes framerSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes framerScale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes framerBounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes framerGentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+@layer components {
+  .logo-header {
+    @apply h-16;
+    width: auto; 
+    max-width: 110px;
+    object-fit: contain;
+  }
+
+  .logo-footer {
+    @apply w-40 h-16 filter brightness-0 invert;
+    object-fit: contain;
+  }
+
+  .nav-link {
+    @apply text-white hover:text-blue-400 transition-all;
+    font-size: 18px !important;
+  }
+
+  .footer-nav-link {
+    @apply text-white hover:text-purple-400 font-medium transition-colors;
+    font-size: 1.1rem !important;
+  }
+
+  .footer-logo-section {
+    @apply flex items-start gap-8;
+  }
+
+  .main-section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-tight;
+    color: black !important;
+  }
+
+  .card-main-heading {
+    @apply text-xl md:text-2xl font-bold mb-4;
+    color: black !important;
+  }
+
+  .card-subheading {
+    @apply text-lg font-semibold mb-3 text-black;
+  }
+
+  .card-text {
+    @apply text-base text-gray-600 leading-relaxed;
+  }
+
+  .about-us-main-heading {
+    font-size: 48px !important;
+    font-weight: 600 !important;
+    color: rgb(247, 247, 195) !important;
+    text-align: center !important;
+    margin-bottom: 0.25rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .about-us-content {
+    @apply max-w-4xl mx-auto px-4;
+    animation: framerSlideIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .about-us-video {
+    @apply rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105;
+    animation: framerSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+  }
+
+  .about-us-text {
+    @apply text-lg md:text-xl mb-6 leading-relaxed;
+    color: rgb(247, 247, 195) !important;
+    opacity: 1 !important; /* Force visibility */
+    animation: framerSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .about-video {
+    width: 80%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .about-video:hover {
+    transform: scale(1.02);
+  }
+}
+
+@layer base {
+  :root {
+    --primary-color: rgb(247, 247, 195); /* Light cream color for stats */
+  }
+}
+
+
+.bg-secondary {
+  background-color: #f4ede4 !important; /* Peach/cream background */
+}
+
+.text-primary {
+  color: rgb(247, 247, 195) !important; /* Light cream color for stats numbers */
+}
+
+/* About Our Team section*/
+.about-team-section {
+  background-color: #000000 !important; /* Black background */
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: framerFadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: framerSlideIn 0.8s ease-out forwards;
+}
+
+.animate-card {
+  @apply transform transition-all duration-300 ease-in-out;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-card:hover {
+  @apply scale-105 shadow-xl;
+}
+
+.animate-card .card-subheading {
+  @apply transition-all duration-300;
+}
+
+.animate-card:hover .card-subheading {
+  @apply text-blue-700;
+}
+
+.animate-card .card-text {
+  @apply transition-all duration-300;
+}
+
+.animate-card:hover .card-text {
+  @apply text-gray-700;
+}
+
+.animate-card .card-main-heading {
+  @apply transition-all duration-300;
+}
+
+.animate-card:hover .card-main-heading {
+  @apply text-blue-900;
+}
+
+.animate-card.in-view {
+  animation: framerFadeIn 0.8s ease-out forwards;
+}
+
+/* Card point styles */
+.card-point {
+  @apply relative pl-4 text-gray-600;
+}
+
+.card-point::before {
+  content: '';
+  @apply absolute left-0 top-2 w-2 h-2 bg-blue-500 rounded-full transition-all duration-300;
+}
+
+.animate-card:hover .card-point::before {
+  @apply bg-blue-700 scale-125;
+}
+
+/* About us text animation delays */
+.about-us-text:nth-child(1) { 
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+.about-us-text:nth-child(2) { 
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.about-us-text:nth-child(3) { 
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+/* Curved bottom shape*/
+.shape-box {
+  border-bottom-left-radius: 100% 250px;
+  border-bottom-right-radius: 100% 250px;
+  width: calc(100% + 100px);
+  margin-left: -50px;
+  overflow: hidden;
+}
+
+.dual-carousel-section {
+  margin-top: 120px;
+  padding-top: 40px;
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+
+  .about-us-text {
+    color: rgb(247, 247, 195) !important; /* Light cream color */
+  }
+} 
