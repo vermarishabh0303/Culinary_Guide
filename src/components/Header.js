@@ -19,28 +19,25 @@ function Header() {
         <nav className=" w-full flex font-popi py-1 md:py-2 px-6 md:px-12 leading-none justify-between text-[0.9rem] font-semibold max-w-[1400px]">
           {/* navbar left section */}
           <div className="flex flex-col gap-2">
-            <div className="flex gap-6">
-              <div className="flex items-center">
+            <div className="flex gap-12">
+              <div className="flex items-center -ml-6">
                 <img src="./assets/logo-cg.webp" alt="website logo" className="logo-header" />
               </div>
-              <ul className=" hidden lg:flex gap-8">
-                <li className="flex items-center"><a className="hover:underline nav-link" href="#">Home</a></li>
-                <li className="flex items-center"><a className="hover:underline nav-link" href="#">About</a></li>
-                <li className="flex items-center"><a className="hover:underline nav-link" href="#">Services</a></li>
-                <li className="flex items-center"><a className="hover:underline nav-link" href="#">Contact</a></li>
+              <ul className=" hidden lg:flex gap-14">
+                <li className="flex items-center"><a className="nav-link" href="#">Home</a></li>
+                <li className="flex items-center"><a className="nav-link" href="#">About</a></li>
+                <li className="flex items-center"><a className="nav-link" href="#">Services</a></li>
+                <li className="flex items-center"><a className="nav-link" href="#">Contact</a></li>
               </ul>
             </div>
           </div>
 
           {/* navbar right section   */}
-          <div className="flex items-center gap-6">
-            <div className="">
-              <a href=""><i className="fa-solid fa-magnifying-glass text-lg"></i></a>
-            </div>
+          <div className="flex items-center gap-6 mr-4">
             <div className="">
               <a href="" className="flex items-center lg:hidden"><i className="fa-solid fa-bars text-lg"></i></a>
             </div>
-            <button className="hidden min-[1150px]:inline-block outline outline-1 outline-white hover:outline-primary  transition-all bg-white text-black font-semibold py-[0.8rem] px-4 rounded-sm">
+            <button className="hidden min-[1150px]:inline-block bg-gray-800 hover:bg-gray-700 transition-all text-white hover:text-[rgb(247,247,195)] font-semibold py-[0.8rem] px-4 rounded-md">
               DASHBOARD
             </button>
           </div>

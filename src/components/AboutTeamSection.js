@@ -1,33 +1,84 @@
 import React from 'react';
 
 function AboutTeamSection() {
+  const teamMembers = [
+    {
+      name: "Lindsay Walton",
+      role: "Front-end Developer",
+      image: "./assets/image.png"
+    },
+    {
+      name: "Courtney Henry", 
+      role: "Designer",
+      image: "./assets/image.png"
+    },
+    {
+      name: "Tom Cook",
+      role: "Director of Product",
+      image: "./assets/image.png"
+    },
+    {
+      name: "Whitney Francis",
+      role: "Copywriter", 
+      image: "./assets/image.png"
+    },
+    {
+      name: "Leonard Krasner",
+      role: "Senior Designer",
+      image: "./assets/image.png"
+    },
+    {
+      name: "Floyd Miles",
+      role: "Principal Designer",
+      image: "./assets/image.png"
+    }
+  ];
+
   return (
-    <section className="flex justify-center about-team-section">
-      <div className="py-16 flex flex-col gap-4 max-w-[1400px]">
-        {/* About Us Heading at Top */}
-        <div className="w-full text-center">
-          <h2 className="about-us-main-heading animate-fade-in text-white">About Our Team</h2>
+    <section className="flex justify-center bg-gray-900">
+      <div className="py-16 px-6 md:px-12 max-w-[1400px] w-full">
+        {/* Heading Section - Center Aligned */}
+        <div className="mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our team</h2>
+          <p className="text-lg text-white max-w-2xl mx-auto">
+            We're a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.
+          </p>
         </div>
         
-        {/* Content and Video in Middle */}
-        <div className="w-full flex flex-col md:flex-row items-center">
-          <div className="w-full md:w-[55%] h-full p-6 pt-10 md:p-14 md:pr-20 flex flex-col justify-center gap-4 about-us-content">
-            <div className="flex flex-col gap-6">
-              <p className="text-base leading-7 text-white about-us-text">
-                We are a team of seasoned restaurant consultants with a proven track record of helping restaurants of all shapes and sizes achieve their full potential. Whether you're a new restaurateur with a dream just setting out or an established owner facing operational challenges, we offer a comprehensive suite of services designed to transform your vision into a sustainable and profitable business.
-              </p>
-              <p className="text-base leading-7 text-white about-us-text">
-                We'll work alongside you to identify areas for improvement, develop data-driven strategies, and implement solutions that ensure your restaurant runs smoothly and delights your guests.
-              </p>
-              <p className="text-base leading-7 text-white about-us-text">
-                To truly thrive, you need the full culinary experience – a well-crafted menu, efficient operations, and a satisfied clientele. Here at Culinary Guide, we understand that running a successful restaurant requires expertise in everything from front-of-house hospitality to back-of-house efficiency.
-              </p>
+        {/* Team Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="team-card group cursor-pointer">
+              {/* Image Container */}
+              <div className="mb-6 overflow-hidden rounded-lg">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              
+              {/* Member Info */}
+              <div className="mb-4">
+                <h3 className="text-xl font-semibold text-white group-hover:text-[rgb(247,247,195)] transition-colors duration-300 mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-white group-hover:text-[rgb(247,247,195)] transition-colors duration-300">
+                  {member.role}
+                </p>
+              </div>
+              
+              {/* Social Icons */}
+              <div className="flex gap-4">
+                <a href="#" className="text-white hover:text-[rgb(247,247,195)] transition-colors duration-300">
+                  <i className="fab fa-twitter text-lg"></i>
+                </a>
+                <a href="#" className="text-white hover:text-[rgb(247,247,195)] transition-colors duration-300">
+                  <i className="fab fa-linkedin text-lg"></i>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div className="md:w-[45%] w-full pl-4 md:pl-0 flex items-center justify-center about-us-video">
-            <img src="./assets/cg-6.gif" alt="About Our Team" className="w-full h-auto about-video" />
-          </div>
+          ))}
         </div>
       </div>
     </section>

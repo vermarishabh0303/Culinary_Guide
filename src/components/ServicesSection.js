@@ -3,191 +3,203 @@ import React from 'react';
 function ServicesSection() {
   return (
     <section className="flex justify-center bg-secondary py-12">
-      <div className="px-6 md:px-0 max-w-[1400px]">
+      <div className="px-4 md:px-8 max-w-[1600px] w-full">
         <h1 className="main-section-heading">What We Offer to Help Your Restaurant Thrive</h1>
-        <div className="grid grid-cols-3 px-4 py-8 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2 py-8 gap-16">
           
-          {/* card one */}
-          <div className="animate-card flex flex-col p-6 bg-white gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[350px]">
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="card-main-heading animate-fade-in">Performance Management</h3>
-              </div>
-              
+          {/* Performance Management Section */}
+          <div className="flex flex-col gap-4">
+            {/* Heading Card */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
+              <h3 className="text-lg font-bold text-gray-800">Performance Management</h3>
+            </div>
+            
+            {/* Main Content Card */}
+            <div className="animate-card flex flex-col p-6 bg-gray-100 gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[380px]">
               <div className="flex flex-col gap-4 text-base text-gray-700">
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.1s'}}>
                   <h5 className="card-subheading">Customer Journey Management</h5>
-                  <p className="card-text">Track customer touchpoints, from discovery to dining, to improve experience and loyalty.</p>
+                  <p className="card-text">Track customer touchpoints from discovery to dining. Improve experience and loyalty through data analysis.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.2s'}}>
                   <h5 className="card-subheading">Investments Optimization</h5>
-                  <p className="card-text">Track ad performance, invest more in what drives sales, test discounts to find optimal value.</p>
+                  <p className="card-text">Track ad performance and invest in what drives sales. Test discounts to find optimal value propositions.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.3s'}}>
                   <h5 className="card-subheading">Customer Offerings</h5>
-                  <p className="card-text">Customer offerings include food, drinks, service, ambiance, and any extras that enhance the delivery experience.</p>
+                  <p className="card-text">Enhance food, drinks, service, and ambiance offerings. Create extras that improve the delivery experience.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.4s'}}>
-                  <h5 className="card-subheading">Review Analysis</h5>
-                  <p className="card-text">Review analysis helps restaurants understand customer feedback to improve service, food, and overall experience.</p>
+                  <h5 className="card-subheading">Performance Analytics</h5>
+                  <p className="card-text">Monitor key performance indicators and business metrics. Track growth and identify improvement opportunities.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* card two */}
-          <div className="animate-card flex flex-col p-6 bg-white gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[350px]">
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="card-main-heading animate-fade-in">Operational Excellence</h3>
-              </div>
-              
+          {/* Operational Excellence Section */}
+          <div className="flex flex-col gap-4">
+            {/* Heading Card */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-sm border-l-4 border-green-500">
+              <h3 className="text-lg font-bold text-gray-800">Operational Excellence</h3>
+            </div>
+            
+            {/* Main Content Card */}
+            <div className="animate-card flex flex-col p-6 bg-gray-100 gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[380px]">
               <div className="flex flex-col gap-4 text-base text-gray-700">
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.1s'}}>
                   <h5 className="card-subheading">Kitchen Optimization</h5>
-                  <p className="card-text">Streamline workflows, reduce waste, and maximize efficiency in your kitchen operations.</p>
+                  <p className="card-text">Streamline workflows and reduce waste effectively. Maximize efficiency in your kitchen operations.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.2s'}}>
                   <h5 className="card-subheading">Staff Training Programs</h5>
-                  <p className="card-text">Comprehensive training solutions to elevate your team's skills and service quality.</p>
+                  <p className="card-text">Comprehensive training solutions for your team. Elevate skills and improve service quality standards.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.3s'}}>
                   <h5 className="card-subheading">Quality Control Systems</h5>
-                  <p className="card-text">Implement robust systems to maintain consistency and excellence in every dish.</p>
+                  <p className="card-text">Implement robust systems for consistency standards. Maintain excellence in every dish you serve.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.4s'}}>
                   <h5 className="card-subheading">Cost Management</h5>
-                  <p className="card-text">Strategic approaches to optimize costs while maintaining quality and profitability.</p>
+                  <p className="card-text">Strategic approaches to optimize operational costs. Maintain quality while improving profitability margins.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* card three */}
-          <div className="animate-card flex flex-col p-6 bg-white gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[350px]">
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="card-main-heading animate-fade-in">Menu Development</h3>
-              </div>
-              
+          {/* Menu Development Section */}
+          <div className="flex flex-col gap-4">
+            {/* Heading Card */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-sm border-l-4 border-purple-500">
+              <h3 className="text-lg font-bold text-gray-800">Menu Development</h3>
+            </div>
+            
+            {/* Main Content Card */}
+            <div className="animate-card flex flex-col p-6 bg-gray-100 gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[380px]">
               <div className="flex flex-col gap-4 text-base text-gray-700">
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.1s'}}>
                   <h5 className="card-subheading">Recipe Innovation</h5>
-                  <p className="card-text">Create unique, profitable dishes that reflect your brand and delight customers.</p>
+                  <p className="card-text">Create unique and profitable dishes for your brand. Develop recipes that delight customers consistently.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.2s'}}>
                   <h5 className="card-subheading">Menu Engineering</h5>
-                  <p className="card-text">Strategic menu design to maximize profitability and customer satisfaction.</p>
+                  <p className="card-text">Strategic menu design for maximum profitability. Optimize customer satisfaction and revenue generation.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.3s'}}>
                   <h5 className="card-subheading">Seasonal Planning</h5>
-                  <p className="card-text">Develop seasonal menus that leverage fresh ingredients and current trends.</p>
+                  <p className="card-text">Develop seasonal menus with fresh ingredients. Leverage current trends and seasonal availability.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.4s'}}>
                   <h5 className="card-subheading">Nutritional Analysis</h5>
-                  <p className="card-text">Ensure menu items meet dietary requirements and health-conscious consumer demands.</p>
+                  <p className="card-text">Ensure menu items meet dietary requirements. Cater to health-conscious consumer demands effectively.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* card four */}
-          <div className="animate-card flex flex-col p-6 bg-white gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[350px]">
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="card-main-heading animate-fade-in">Brand Strategy</h3>
-              </div>
-              
+          {/* Brand Strategy Section */}
+          <div className="flex flex-col gap-4">
+            {/* Heading Card */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-sm border-l-4 border-red-500">
+              <h3 className="text-lg font-bold text-gray-800">Brand Strategy</h3>
+            </div>
+            
+            {/* Main Content Card */}
+            <div className="animate-card flex flex-col p-6 bg-gray-100 gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[380px]">
               <div className="flex flex-col gap-4 text-base text-gray-700">
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.1s'}}>
                   <h5 className="card-subheading">Brand Identity Development</h5>
-                  <p className="card-text">Create a compelling brand story that resonates with your target audience.</p>
+                  <p className="card-text">Create compelling brand stories that resonate. Connect with your target audience effectively.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.2s'}}>
                   <h5 className="card-subheading">Digital Presence</h5>
-                  <p className="card-text">Build a strong online presence across social media and digital platforms.</p>
+                  <p className="card-text">Build strong online presence across platforms. Leverage social media and digital marketing channels.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.3s'}}>
                   <h5 className="card-subheading">Marketing Campaigns</h5>
-                  <p className="card-text">Develop targeted marketing strategies to attract and retain customers effectively.</p>
+                  <p className="card-text">Develop targeted marketing strategies effectively. Attract and retain customers through campaigns.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.4s'}}>
                   <h5 className="card-subheading">Community Engagement</h5>
-                  <p className="card-text">Build strong local relationships and establish your restaurant as a community hub.</p>
+                  <p className="card-text">Build strong local relationships and connections. Establish your restaurant as a community hub.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* card five */}
-          <div className="animate-card flex flex-col p-6 bg-white gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[350px]">
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="card-main-heading animate-fade-in">Financial Planning</h3>
-              </div>
-              
+          {/* Financial Planning Section */}
+          <div className="flex flex-col gap-4">
+            {/* Heading Card */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-sm border-l-4 border-yellow-500">
+              <h3 className="text-lg font-bold text-gray-800">Financial Planning</h3>
+            </div>
+            
+            {/* Main Content Card */}
+            <div className="animate-card flex flex-col p-6 bg-gray-100 gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[380px]">
               <div className="flex flex-col gap-4 text-base text-gray-700">
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.1s'}}>
                   <h5 className="card-subheading">Revenue Optimization</h5>
-                  <p className="card-text">Identify opportunities to increase revenue through strategic pricing and upselling.</p>
+                  <p className="card-text">Identify opportunities to increase revenue streams. Implement strategic pricing and upselling techniques.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.2s'}}>
                   <h5 className="card-subheading">Budget Management</h5>
-                  <p className="card-text">Create and maintain realistic budgets that support growth and profitability.</p>
+                  <p className="card-text">Create and maintain realistic business budgets. Support growth and profitability planning goals.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.3s'}}>
                   <h5 className="card-subheading">Cash Flow Analysis</h5>
-                  <p className="card-text">Monitor and optimize cash flow to ensure business stability and growth.</p>
+                  <p className="card-text">Monitor and optimize cash flow patterns. Ensure business stability and sustainable growth.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.4s'}}>
                   <h5 className="card-subheading">Investment Strategy</h5>
-                  <p className="card-text">Strategic guidance on equipment upgrades, expansion, and technology investments.</p>
+                  <p className="card-text">Strategic guidance on equipment and expansion. </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* card six */}
-          <div className="animate-card flex flex-col p-6 bg-white gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[350px]">
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="card-main-heading animate-fade-in">Technology Integration</h3>
-              </div>
-              
+          {/* Technology Integration Section */}
+          <div className="flex flex-col gap-4">
+            {/* Heading Card */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-sm border-l-4 border-indigo-500">
+              <h3 className="text-lg font-bold text-gray-800">Technology Integration</h3>
+            </div>
+            
+            {/* Main Content Card */}
+            <div className="animate-card flex flex-col p-6 bg-gray-100 gap-6 justify-between drop-shadow-md hover:drop-shadow-xl hover:scale-105 ease-linear transition-all rounded-lg min-h-[380px]">
               <div className="flex flex-col gap-4 text-base text-gray-700">
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.1s'}}>
                   <h5 className="card-subheading">POS Systems</h5>
-                  <p className="card-text">Implement modern point-of-sale systems to streamline operations and analytics.</p>
+                  <p className="card-text">Implement modern point-of-sale systems efficiently. Streamline operations and analytics tracking.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.2s'}}>
                   <h5 className="card-subheading">Online Ordering</h5>
-                  <p className="card-text">Set up seamless online ordering and delivery systems to expand your reach.</p>
+                  <p className="card-text">Set up seamless online ordering systems. Expand your reach with delivery platforms.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.3s'}}>
                   <h5 className="card-subheading">Inventory Management</h5>
-                  <p className="card-text">Digital solutions to track inventory, reduce waste, and optimize purchasing.</p>
+                  <p className="card-text">Digital solutions to track inventory effectively. Reduce waste and optimize purchasing decisions.</p>
                 </div>
                 
                 <div className="animate-slide-up card-point" style={{animationDelay: '0.4s'}}>
                   <h5 className="card-subheading">Customer Analytics</h5>
-                  <p className="card-text">Advanced analytics to understand customer behavior and optimize operations.</p>
+                  <p className="card-text">Advanced analytics to understand customer behavior. Optimize operations and improve business decisions.</p>
                 </div>
               </div>
             </div>

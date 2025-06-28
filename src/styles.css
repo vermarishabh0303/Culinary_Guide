@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Set page background color */
+body {
+  background-color: #F4EDE4;
+}
+
 /* Custom styles for logo carousel */
 .logo-carousel-container {
   width: 100%;
@@ -123,8 +128,14 @@
   }
 
   .nav-link {
-    @apply text-white hover:text-blue-400 transition-all;
+    @apply text-white transition-all;
     font-size: 18px !important;
+    text-decoration: none;
+  }
+
+  .nav-link:hover {
+    color: rgb(247, 247, 195) !important;
+    text-decoration: none;
   }
 
   .footer-nav-link {
@@ -236,7 +247,7 @@
 }
 
 .animate-card:hover .card-subheading {
-  @apply text-blue-700;
+  color: #111827;
 }
 
 .animate-card .card-text {
@@ -266,11 +277,13 @@
 
 .card-point::before {
   content: '';
-  @apply absolute left-0 top-2 w-2 h-2 bg-blue-500 rounded-full transition-all duration-300;
+  @apply absolute left-0 top-2 w-2 h-2 rounded-full transition-all duration-300;
+  background-color: #111827;
 }
 
 .animate-card:hover .card-point::before {
-  @apply bg-blue-700 scale-125;
+  @apply scale-125;
+  background-color: #111827;
 }
 
 /* About us text animation delays */
