@@ -38,7 +38,9 @@ function Header() {
               <a href="" className="flex items-center lg:hidden"><i className="fa-solid fa-bars text-lg"></i></a>
             </div>
             <button className="hidden min-[1150px]:inline-block bg-gray-800 hover:bg-gray-700 transition-all text-white hover:text-[rgb(247,247,195)] font-semibold py-[0.8rem] px-4 rounded-md">
-              DASHBOARD
+              <a href="https://dashboard.culinaryguide.in/" target="_blank" rel="noopener noreferrer">
+                DASHBOARD
+              </a>
             </button>
           </div>
         </nav>

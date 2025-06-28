@@ -3,40 +3,40 @@ import React from 'react';
 function AboutTeamSection() {
   const teamMembers = [
     {
-      name: "Lindsay Walton",
-      role: "Front-end Developer",
+      name: "Nishchay Puri",
+      role: "Founder",
       image: "./assets/image.png"
     },
     {
-      name: "Courtney Henry", 
-      role: "Designer",
+      name: "Sudhanshu Paul", 
+      role: "Co Founder",
       image: "./assets/image.png"
     },
     {
-      name: "Tom Cook",
-      role: "Director of Product",
+      name: "Sultan Amaan Salim",
+      role: "Co Founder",
       image: "./assets/image.png"
     },
     {
-      name: "Whitney Francis",
-      role: "Copywriter", 
+      name: "Harsh Bahuguna",
+      role: "Account Manager", 
       image: "./assets/image.png"
     },
     {
-      name: "Leonard Krasner",
-      role: "Senior Designer",
+      name: "Jasmehak",
+      role: "Techie",
       image: "./assets/image.png"
     },
     {
-      name: "Floyd Miles",
-      role: "Principal Designer",
+      name: "Disha",
+      role: "Social Media Manager",
       image: "./assets/image.png"
     }
   ];
 
   return (
-    <section className="flex justify-center bg-gray-900">
-      <div className="py-16 px-6 md:px-12 max-w-[1400px] w-full">
+    <section className="flex justify-center bg-gray-900 curved-top">
+      <div className="pt-40 pb-16 px-6 md:px-12 max-w-[1400px] w-full relative z-10">
         {/* Heading Section - Center Aligned */}
         <div className="mb-12 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our team</h2>

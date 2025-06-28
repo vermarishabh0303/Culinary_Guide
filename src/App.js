@@ -7,6 +7,7 @@ import {
   FeaturesSection,
   CTCSection,
   StatsSection,
+  CurvedSection,
   ServicesSection,
   AboutTeamSection,
   PartnersSection,
@@ -90,6 +91,7 @@ function App() {
       <FeaturesSection />
       <CTCSection />
       <StatsSection />
+      <CurvedSection />
       <ServicesSection />
       <AboutTeamSection />
       <PartnersSection />
