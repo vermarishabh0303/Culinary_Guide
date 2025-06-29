@@ -12,15 +12,15 @@ function StatsSection() {
         </div>
         <div className="p-2 w-56">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold" style={{color: '#F5F5DC'}}>
-            <span className="counter" data-count="10">0</span>+
+            <span className="counter" data-count="50">0</span>+
           </h1>
           <p className="text-sm mt-2" style={{color: '#F5F5DC'}}>Food brands</p>
         </div>
         <div className="p-2 w-56">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold" style={{color: '#F5F5DC'}}>
-            <span className="counter" data-count="150">0</span>+
+            <span className="counter" data-count="130">0</span>+
           </h1>
-          <p className="text-sm mt-2" style={{color: '#F5F5DC'}}>Individual stores managed</p>
+          <p className="text-sm mt-2" style={{color: '#F5F5DC'}}>Individual outlets managed</p>
         </div>
       </div>
     </section>
