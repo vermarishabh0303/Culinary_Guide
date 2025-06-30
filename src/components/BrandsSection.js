@@ -9,42 +9,54 @@ function BrandsSection() {
       <div className="logo-carousel-container overflow-hidden w-full mb-8">
         <div className="logo-carousel flex animate-carousel gap-12 md:gap-16">
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/cl1.webp" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl1.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/cl2.webp" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl2.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/cl3.webp" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl3.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/cl4.webp" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl4.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/cl5.webp" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl5.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/cl7.webp" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl7.webp" alt="" />
+          </div>
+          <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl9.webp" alt="" />
+          </div>
+          <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl10.webp" alt="" />
+          </div>
+          <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl11.webp" alt="" />
+          </div>
+          <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl12.webp" alt="" />
           </div>
           
-          {/* Duplicate set */}
+          {/* Duplicate set for seamless loop */}
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-seek@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl1.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-xero@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl2.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/rea@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl3.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/rmit@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl4.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-ibm@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl5.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/deliveroo@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl7.webp" alt="" />
           </div>
         </div>
       </div>
@@ -53,42 +65,42 @@ function BrandsSection() {
       <div className="logo-carousel-container overflow-hidden w-full">
         <div className="logo-carousel-reverse flex animate-carousel-reverse gap-12 md:gap-16">
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-seek@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl14.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-xero@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl15.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/rea@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl16.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/rmit@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl17.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-ibm@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl18.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/deliveroo@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl19.webp" alt="" />
           </div>
           
-          {/* Duplicate set */}
+          {/* Duplicate set for seamless loop */}
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-seek@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl14.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-xero@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl15.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/rea@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl16.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/rmit@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl17.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/logo-ibm@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl18.webp" alt="" />
           </div>
           <div className="logo-slide flex items-center justify-center flex-shrink-0 px-4">
-            <img className="h-[50px] md:h-[56px]" src="./assets/deliveroo@2x.png" alt="" />
+            <img className="h-[75px] md:h-[84px]" src="./assets/cl19.webp" alt="" />
           </div>
         </div>
       </div>
