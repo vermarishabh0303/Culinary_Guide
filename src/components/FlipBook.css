@@ -1,0 +1,25 @@
+.page {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-book-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .flip-book-container {
+    width: 90%;
+  }
+}
